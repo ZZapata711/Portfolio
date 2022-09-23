@@ -1,0 +1,16 @@
+.m-10{
+    margin: 10px;
+}
+
+.hidden{
+    visibility: hidden;
+    opacity: 0;
+    position: fixed;
+    z-index: -1;
+}
+
+.open, .close, .overlay, .hidden{
+    transition: opacity .5s ease-in-out;
+}
+
+

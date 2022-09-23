@@ -1,0 +1,126 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+    background-color: #1c1d25;
+    z-index: 1;
+}
+
+/* Header Styling */
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    width: 100%;
+    position: relative;
+    height: 50px;
+}
+
+.navbar{
+    display: flex;
+    flex-direction: row;
+}
+
+.navbar li{
+    list-style-type: none;
+}
+
+/* Overlay Styling */
+.overlay{
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    position: absolute;
+    top: 50px; 
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+.overlay::before{
+    content: "";
+    background-color: black;
+    opacity: .9;
+    position: absolute;
+    height: 100vh;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 0;
+}
+
+.overlay-menu{
+    position: absolute;
+    top: 100px;
+    color: white;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    background-color: gray;
+    border-radius: 10px;
+    text-align: center;
+    opacity: 1;
+    z-index: 1;
+}
+
+.overlay-menu a{
+    color: white;
+    text-decoration: none;
+}
+.overlay-menu li{
+    margin-top: 20px;
+    list-style-type: none;
+    font-size: 18px;
+}
+
+.overlay-menu ul:last-child{
+    margin-bottom: 20px;
+}
+
+/* Hero Styling */
+.hero{
+    height: 300px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 1px solid white;
+}
+
+.socials{
+    display: flex;
+    flex-direction: row;
+}
+
+.socials li{
+    list-style-type: none;
+}
+
+/* About Styling */
+.about{
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 300px;
+}
+
+.about-img{
+    height: 100px;
+    width: 100px;
+    border-radius: 50px;
+}
+
+.about p{
+    font-size: 14px;
+    width: 80%;
+}
