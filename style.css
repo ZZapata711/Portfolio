@@ -35,11 +35,7 @@ header{
     display: flex;
     align-items: flex-start;
     justify-content: center;
-    position: absolute;
-    top: 50px; 
-    right: 0;
-    bottom: 0;
-    left: 0;
+    position: relative;
 }
 
 .overlay::before{
