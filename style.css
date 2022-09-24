@@ -103,6 +103,7 @@ header{
 .about{
     color: white;
     display: flex;
+    border-bottom: 1px solid white;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -119,4 +120,28 @@ header{
 .about p{
     font-size: 14px;
     width: 80%;
+}
+
+/* Projects Styling */
+.projects{
+    color: white;
+    display: flex;
+    border-bottom: 1px solid white;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 25px;
+}
+
+.project{
+    display: flex;
+    flex-direction: column;
+    height: 225px;
+    justify-content: space-evenly;
+}
+.project-image{
+    width: 100px; 
+    height: 150px;
+    border-radius: 10px;
 }
